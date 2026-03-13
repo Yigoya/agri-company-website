@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "agri-backend"
+version = "1.0.0"
+description = "Agricultural Company Website Backend API"
+authors = ["GreenFields Agriculture"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "^0.115.0"}
+uvicorn = {extras = ["standard"], version = "^0.30.0"}
+sqlalchemy = "^2.0.0"
+alembic = "^1.13.0"
+psycopg2-binary = "^2.9.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.9"
+python-dotenv = "^1.0.0"
+pydantic = {extras = ["email"], version = "^2.0.0"}
+pydantic-settings = "^2.0.0"
+pillow = "^10.0.0"
+aiofiles = "^24.1.0"
+bcrypt = "4.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+httpx = "^0.27.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
